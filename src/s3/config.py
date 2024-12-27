@@ -39,9 +39,14 @@ class CloudflareConfig(StrictBaseModel):
     zone: str
 
 
+class MinioConfig(StrictBaseModel):
+    version: str
+
+
 class ComponentConfig(StrictBaseModel):
     target: TargetConfig
     cloudflare: CloudflareConfig
+    minio: MinioConfig
 
 
 class StackConfig(StrictBaseModel):

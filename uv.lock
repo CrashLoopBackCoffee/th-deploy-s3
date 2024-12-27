@@ -357,6 +357,20 @@ wheels = [
 ]
 
 [[package]]
+name = "pulumi-random"
+version = "4.16.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "parver" },
+    { name = "pulumi" },
+    { name = "semver" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d1/2c/681f1ac76133a6ebdf3b485006fc167a6a7fd9a7c3e82316158257ebcd79/pulumi_random-4.16.8.tar.gz", hash = "sha256:0112e10e3c8096b6e6fa05974bcefcf2f7731081035191860a2e7d6c0e4ef09f", size = 21172 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c5/dc/6bb9083f6d00e94884cb7b312bfc45489993627caaca38c3e1476b3b68e1/pulumi_random-4.16.8-py3-none-any.whl", hash = "sha256:ba1b1fd6532988b1977e4bc8243d5b6f3c048c40f5919fcc70061088f37ebb51", size = 30811 },
+]
+
+[[package]]
 name = "pydantic"
 version = "2.10.4"
 source = { registry = "https://pypi.org/simple" }
@@ -534,6 +548,7 @@ dependencies = [
     { name = "pulumi-cloudflare" },
     { name = "pulumi-command" },
     { name = "pulumi-docker" },
+    { name = "pulumi-random" },
     { name = "pydantic" },
     { name = "pyyaml" },
 ]
@@ -558,6 +573,7 @@ requires-dist = [
     { name = "pulumi-cloudflare", specifier = ">=5.44.0" },
     { name = "pulumi-command", specifier = "==1.0.1" },
     { name = "pulumi-docker", specifier = "==4.5.8" },
+    { name = "pulumi-random", specifier = ">=4.16.8" },
     { name = "pydantic", specifier = ">=2.10.3" },
     { name = "pyyaml", specifier = ">=6.0.1" },
 ]
