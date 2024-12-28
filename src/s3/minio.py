@@ -75,7 +75,7 @@ def create_minio(
     )
 
     p.export('minio-s3', f'https://s3.{component_config.cloudflare.zone}')
+    p.export('minio-s3-hostname', f's3.{component_config.cloudflare.zone}')
     p.export('minio-console', f'https://minio-console.{component_config.cloudflare.zone}')
-    p.export('minio-console-hostname', f'minio-console.{component_config.cloudflare.zone}')
     p.export('minio-user', 'admin')
     p.export('minio-password', minio_password.result)
