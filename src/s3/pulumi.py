@@ -55,7 +55,8 @@ def create_pulumi_bucket(
     onepassword.Item(
         's3-pulumi',
         title='Pulumi S3 Token',
-        vault='Pulumi',
+        # Pulumi vault
+        vault='mf5hvtoot2hvdylkce6hxdpqmi',
         username=bucket_user.name,
         password=bucket_user.secret,
     )
