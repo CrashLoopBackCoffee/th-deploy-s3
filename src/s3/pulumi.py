@@ -13,6 +13,13 @@ def create_pulumi_bucket(
         opts=minio_opts,
     )
 
+    pulumi_minio.S3BucketVersioning(
+        'pulumi',
+        bucket=bucket.bucket,
+        versioning_configuration={'status': 'Enabled'},
+        opts=minio_opts,
+    )
+
     policy_data = {
         'Version': '2012-10-17',
         'Statement': [
